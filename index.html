@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خبر بلوچستان</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Tahoma,Arial,sans-serif;
+  background:#f4f4f4;
+  color:#171717;
+}
+
+header{
+  background:#111;
+  color:white;
+  border-bottom:3px solid #c9a227;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:0 18px;
+}
+
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:22px 0;
+}
+
+.logo{
+  font-size:30px;
+  font-weight:900;
+}
+
+.logo span{
+  color:#d4af37;
+}
+
+nav{
+  background:#1d1d1d;
+  border-top:1px solid #333;
+}
+
+nav .container{
+  display:flex;
+  gap:8px;
+  overflow:auto;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:14px 16px;
+  white-space:nowrap;
+}
+
+nav a:hover{
+  background:#c9a227;
+  color:#111;
+}
+
+.hero{
+  margin:28px 0;
+  background:#171717;
+  color:white;
+  padding:38px;
+  border-radius:14px;
+}
+
+.hero h1{
+  font-size:36px;
+  margin:0 0 12px;
+}
+
+.hero p{
+  line-height:2;
+  color:#ddd;
+  max-width:750px;
+}
+
+.btn{
+  display:inline-block;
+  background:#c9a227;
+  color:#111;
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.section-title{
+  border-right:5px solid #c9a227;
+  padding-right:12px;
+  margin:30px 0 18px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 2px 12px #00000012;
+}
+
+.card .photo{
+  height:150px;
+  background:linear-gradient(135deg,#222,#777);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ddd;
+}
+
+.card .body{
+  padding:18px;
+}
+
+.card h3{
+  margin:0 0 10px;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.card p{
+  color:#666;
+  line-height:1.8;
+  margin:0;
+}
+
+.tag{
+  font-size:12px;
+  color:#9a7a10;
+  font-weight:bold;
+}
+
+.notice{
+  background:white;
+  padding:18px;
+  border-radius:12px;
+  line-height:2;
+  color:#555;
+  border-right:4px solid #c9a227;
+  margin-top:25px;
+}
+
+footer{
+  margin-top:45px;
+  background:#111;
+  color:#ddd;
+  padding:30px 0;
+  text-align:center;
+  line-height:2;
+}
+
+@media(max-width:750px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:28px;
+  }
+
+  .logo{
+    font-size:24px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container top">
+
+<div class="logo">
+خبر <span>بلوچستان</span>
+</div>
+
+<div>
+رسانه مستقل
+</div>
+
+</div>
+
+<nav>
+<div class="container">
+
+<a href="#">صفحه اصلی</a>
+<a href="#">آخرین اخبار</a>
+<a href="#">اخبار بلوچستان</a>
+<a href="#">گزارش اجتماعی</a>
+<a href="#">گزارش تصویری</a>
+<a href="#">ویدئو</a>
+<a href="#">درباره ما</a>
+
+</div>
+</nav>
+
+</header>
+
+
+<main class="container">
+
+<section class="hero">
+
+<h1>خبر بلوچستان</h1>
+
+<p>
+رسانه‌ای مستقل برای پوشش اخبار، رویدادها،
+گزارش‌های اجتماعی و مطالب مرتبط با مردم و مناطق بلوچستان.
+</p>
+
+<a class="btn" href="#news">
+مشاهده آخرین اخبار
+</a>
+
+</section>
+
+
+<div class="notice">
+این رسانه توسط یک تحریریه مستقل اداره می‌شود و
+اطلاعات شخصی اعضای تحریریه در سایت منتشر نمی‌شود.
+</div>
+
+
+<h2 class="section-title" id="news">
+آخرین اخبار
+</h2>
+
+
+<section class="grid">
+
+<article class="card">
+
+<div class="photo">
+تصویر خبر
+</div>
+
+<div class="body">
+
+<div class="tag">
+اخبار بلوچستان
+</div>
+
+<h3>
+عنوان خبر در این بخش قرار می‌گیرد
+</h3>
+
+<p>
+خلاصه کوتاهی از خبر برای نمایش در صفحه اصلی.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="photo">
+تصویر گزارش
+</div>
+
+<div class="body">
+
+<div class="tag">
+گزارش اجتماعی
+</div>
+
+<h3>
+گزارش تازه از رویدادهای منطقه
+</h3>
+
+<p>
+توضیح کوتاه و دقیق درباره گزارش منتشرشده.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="photo">
+گزارش تصویری
+</div>
+
+<div class="body">
+
+<div class="tag">
+گزارش تصویری
+</div>
+
+<h3>
+تصاویر و روایت‌های میدانی
+</h3>
+
+<p>
+بخش ویژه برای انتشار تصاویر و گزارش‌های تصویری.
+</p>
+
+</div>
+
+</article>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+© ۲۰۲۶ خبر بلوچستان — تحریریه مستقل.
+تمامی مطالب با ذکر منبع منتشر می‌شوند.
+
+</div>
+
+</footer>
+
+</body>
+  </html>
